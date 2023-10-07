@@ -26,7 +26,8 @@ FetchContent_MakeAvailable(GLEW GLFW)
 add_executable(
         main
         main.cpp
-        2d_src.cpp
+        transform.cpp
+        transform.h
 )
 
 target_link_libraries(main PRIVATE GLEW glfw GL)
